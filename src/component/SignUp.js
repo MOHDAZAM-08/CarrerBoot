@@ -37,7 +37,7 @@ export default function SignUp() {
             try {
                 // Call server API to send the data
                 console.log(values.name, values.enrollment, values.branch, values.semester, values.password);
-                await axios.post('http://localhost:8080/collegeazy/register', {
+                await axios.post('http://localhost:8080/auth/api/register', {
                     name: values.name,
                     enrollment: values.enrollment,
                     branch: values.branch,

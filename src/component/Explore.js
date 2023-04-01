@@ -8,36 +8,7 @@ export default function Explore() {
                 <div className="butt">
                     <h3 style={{ textAlign: "center", color: "", fontWeight: "bolder", fontSize: "3rem", margin: "0 0 50px 0" }}>IN WHICH FILED YOU WANT TO EXPLORE</h3>
 
-                    <button className='btn btn-primary' data-bs-toggle="modal" data-bs-target="#exampleModal">Web Development</button>
-
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" style={{ maxWidth: "800px"  }}>
-                            <div class="modal-content" style={{backgroundColor:"white",color:"black"}}>
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Web Development</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <h2>Roadmaps</h2>
-                                    <span>Web Development Course by Scaler <br />
-                                        The Complete 2022 Web Development Course on Udemy <br />
-                                        Web Design for Everybody on Coursera <br />
-                                        Web Development with JavaScript by MIT xPRO </span>
-                                    <br />
-                                    <h2>Youtube Channels</h2>
-                                   <span style={{color:"blue"}}>https://www.freecodecamp.org/news/beginners-roadmap-web-development/ </span><br/>
-                                   <span style={{color:"blue"}}>https://www.scaler.com/topics/software-engineering/web-development-roadmap/ </span><br/>
-                                   <span style={{color:"blue"}}>https://roadmap.sh/ </span><br/>
-                                   <span style={{color:"blue"}}>https://www.geeksforgeeks.org/roadmap-to-become-a-web-developer-in-2022/ </span><br/>
-                                    {/* <h2>Courses</h2> */}
-                                    <span></span>
-                                    <span></span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
+                    <button className='btn btn-primary'>Web Development</button>
                     <button className='btn btn-primary'>Android Development</button>
                     <button className='btn btn-primary'>DSA</button>
                     <button className='btn btn-primary'>Blockchain </button>
@@ -55,7 +26,7 @@ export default function Explore() {
                                 Web Development
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body" style={{fontSize:"1.3rem"}}>
                                 <span>Web development: As mentioned earlier, web development involves the design, development, and maintenance of websites and web applications. Web developers use programming languages like HTML, CSS, and JavaScript to build websites and web applications.
                                 </span>

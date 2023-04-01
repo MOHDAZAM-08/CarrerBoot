@@ -26,7 +26,7 @@ export default function LoginPage() {
       try {
         // Call server API to send the data
         console.log(values.enrollment, values.password);
-        await axios.post("http://localhost:8080/collegeazy/login", {
+        await axios.post("http://localhost:8080/auth/api/login", {
           enrollment: values.enrollment,
           password: values.password,
         })

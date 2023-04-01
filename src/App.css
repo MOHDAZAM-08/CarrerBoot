@@ -155,7 +155,7 @@
 
 /* explore */
 .explore {
-  background-color: #00bafe14;
+  background-image: linear-gradient(rgba(253, 241, 203, 0.451), rgba(3, 78, 154, 0.396));
   color: #022446;
   height: 30rem;
   display: flex;
@@ -165,18 +165,28 @@
 }
 
 .explore .butt .btn {
+  color: #022446;
   height: 15rem;
   width: 10rem;
   margin-left: 10px;
   font-size: 1.3rem;
   text-align: center;
-  background-color: #003b76;
+  background: rgba(36, 197, 255, 0.967);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border: none;
 
 }
 
 .explore .butt .btn:hover {
-  background-color: #ff8400;
+  background: #012144;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0;
 }
 
 .acccor {
@@ -186,7 +196,7 @@
 }
 
 .acccor .accordion .accordion-item {
-  background-color: #ff840079;
+  background-color: #ffffffa0;
   color: rgba(0, 0, 0, 0.86);
   border: none;
 
@@ -202,7 +212,9 @@
 }
 
 .acccor .accordion .accordion-item .accordion-button:hover {
-  background-color: #ff8400;
+  background-color: #ffffff;
+  color: #012144;
+  border: 2px solid #012144;
 }
 
 
@@ -375,12 +387,13 @@ button:hover {
 /* previewexplore */
 
 .heeed{
-  margin-top: 20PX;
+  margin-top: 60PX;
 }
 
 .explorepage{
-  padding: 40px 0;
-  background-color: #02244612;
+  padding: 50px 0;
+  background-color: #7bbdff40;
+  display: flex;
   
 }
 
@@ -390,27 +403,80 @@ button:hover {
 }
 
 .explorePagebtn{
-  background-color: #00bafe14;
+  background-image: linear-gradient(rgba(253, 241, 203, 0.451), rgba(3, 78, 154, 0.396));
   color: #022446;
-  height: 20rem;
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px;
+  margin: 0px 0px;
 }
 
 .explorePagebtn .buttexplore .btn {
+  color: #022446;
   height: 15rem;
   width: 10rem;
   margin-left: 10px;
   font-size: 1.3rem;
   text-align: center;
-  background-color: #003b76;
+  background: rgba(36, 197, 255, 0.967);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border: none;
 
 }
 
 .explorePagebtn .buttexplore .btn:hover {
-  background-color: #ff8400;
+ background: #012144;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0;
 }
+
+.card{
+  background-color: #02244612;
+  height: 100%;
+  padding: 30px 20px;
+  border: none;
+  /* color: #f2f2f2; */
+}
+.card h3{
+  padding-left: 30px;
+  color: #ff8400;
+
+}
+
+/* accod in  previ */
  
+.fullview {
+  /* background-color: #00bafe14; */
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.fullview .accordion .accordion-item {
+  background-color: #00a2ff4b;
+  color: rgba(0, 0, 0, 0.86);
+  border: none;
+
+
+}
+
+.fullview .accordion .accordion-item .accordion-button {
+  background-color: #012144;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  height: 6rem;
+}
+
+.fullview .accordion .accordion-item .accordion-button:hover {
+  background-color: #ffffff;
+  color: #012144;
+  font-size: 2rem;
+  border: 1px solid #022446;
+}
