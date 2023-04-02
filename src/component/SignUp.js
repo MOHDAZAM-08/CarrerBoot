@@ -19,17 +19,13 @@ export default function SignUp() {
     const formik = useFormik({
         initialValues: {
             name: '',
-            enrollment: '',
-            branch: '',
-            semester: '',
+            email: '',
             password: '',
         },
 
         validationSchema: Yup.object({
             name: Yup.string().min(3).max(11).required("Please enter the name"),
-            enrollment: Yup.string().min(6, 'Enrollment must be at least 6').required("Please enter the enrollment"),
-            branch: Yup.string().min(1).required("Please select the branch"),
-            semester: Yup.number    ().min(1).required("Please select the semester"),
+            email: Yup.string().min(6, 'Enrollment must be at least 6').required("Please enter the enrollment"),
             password: Yup.string().min(6).required("Please enter the password"),
         }),
 
@@ -38,10 +34,8 @@ export default function SignUp() {
                 // Call server API to send the data
                 console.log(values.name, values.enrollment, values.branch, values.semester, values.password);
                 await axios.post('http://localhost:8080/auth/api/register', {
-                    name: values.name,
-                    enrollment: values.enrollment,
-                    branch: values.branch,
-                    semester: values.semester,
+                    username: values.name,
+                    email: values.email,
                     password: values.password,
                 })
                 console.log("Successfully login");
@@ -87,7 +81,7 @@ export default function SignUp() {
                                     <input type="email" className="form-control"
                                         onChange={formik.handleChange}
                                         value={formik.values.enrollment}
-                                        id="floatingInput1" autoComplete="off" name='enrollment' pattern="[0-9]+" title="Please enter only Number" placeholder="E mail" />
+                                        id="floatingInput1" autoComplete="off" name='email'  title="Please enter only Number" placeholder="E mail" />
                                     {formik.touched.enrollment && formik.errors.enrollment ? (
                                         <div style={{ fontSize: "10px", color: "red", marginLeft: "40px", marginBottom: "7px" }}>{formik.errors.enrollment}</div>
                                     ) : null}
