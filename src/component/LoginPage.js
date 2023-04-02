@@ -15,11 +15,11 @@ export default function LoginPage() {
 
   const formik = useFormik({
     initialValues: {
-      enrollment: '',
+      email: '',
       password: '',
     },
     validationSchema: Yup.object({
-      enrollment: Yup.string().min(3).max(11).required("Please enter the roll number"),
+      email: Yup.string().required("Please enter the email"),
       password: Yup.string().min(6).required("Please enter the password"),
     }),
     onSubmit: async (values) => {
@@ -27,7 +27,7 @@ export default function LoginPage() {
         // Call server API to send the data
         console.log(values.enrollment, values.password);
         await axios.post("http://localhost:8080/auth/api/login", {
-          enrollment: values.enrollment,
+          email: values.email,
           password: values.password,
         })
         console.log("Successfully login");
@@ -58,7 +58,7 @@ export default function LoginPage() {
                 <input type="email" className="form-control"
                   onChange={formik.handleChange}
                   value={formik.values.enrollment}
-                  id="enrollment" autoComplete="off" name='enrollment' placeholder="E mail" />
+                  id="email" autoComplete="off" name='email' placeholder="E mail" />
                 {formik.touched.enrollment && formik.errors.enrollment ? (
                   <div style={{fontSize:"10px", color:"red",marginLeft:"20px",marginBottom:"20px"}}>{formik.errors.enrollment}</div>
                 ) : null}
